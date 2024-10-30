@@ -1,0 +1,107 @@
+.search-header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  height: 134px;
+  padding: 10px;
+  gap: 8px;
+  background-color: #f0f9f9;
+  border: 1px solid #d9f1f1;
+  position: relative;
+  border-radius: 12px 12px 0px 0px;
+  width: 649px;
+}
+.search-modal-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-modal-content {
+  padding: 23px 20px 20px 20px;
+}
+
+.search-field {
+  width: 100%;
+  height: 36px;
+  padding: 8px 8px 8px 16px;
+  gap: 10px;
+  border-radius: 24px;
+  border: 1px solid #e5e5e5;
+  opacity: 0px;
+  background-color: #fafafa;
+  outline: none;
+}
+.search-field:focus {
+  border: 2px solid #e5e5e5;
+  box-shadow: none;
+}
+.search-btn {
+  height: 50px;
+  width: 100%;
+  margin-top: 14px;
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.restore-btn {
+  width: 40px;
+  height: 40px;
+  gap: 10px;
+  border-radius: 50%;
+  opacity: 0px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.restore-btn:hover{
+  border: 2px solid #e5e5e5;
+}
+.search-action-btn {
+  width: 81px;
+  height: 36px;
+  padding: 4px 22px 4px 22px;
+  gap: 10px;
+  border-radius: 4px;
+  opacity: 0px;
+  background-color: #00a1a1;
+  border: none;
+  color: #fff;
+  font-family: Roboto;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.search-action-btn:hover{
+  background-color: #BE185D;
+}
+
+.search-item {
+  height: 60px;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 4px;
+  opacity: 0px;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.search-item:hover{
+  background-color: #e5e5e5;
+}
+.search-item-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+}

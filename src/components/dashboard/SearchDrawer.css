@@ -1,0 +1,138 @@
+.search-content {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.search-input {
+  width: 459px;
+  height: 48px;
+  padding: 12px 20px;
+  gap: 8px;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-input input {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  border: none;
+  padding: 10px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #222222;
+}
+
+.search-input input:focus {
+  border: none;
+  outline: none; /* This removes the focus outline */
+}
+
+.search-card {
+  width: 459px;
+  height: auto;
+  padding: 20px;
+  gap: 8px;
+  border-radius: 25px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-top: 15px;
+  flex-direction: column;
+}
+
+.search-card .search-content {
+  width: 419px;
+  height: auto;
+  padding: 16px;
+  gap: 18px;
+  border-radius: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  opacity: 0px;
+  border: 1px solid #e5e5e5;
+}
+.search-card .search-content p {
+  text-align: left;
+  color: gary;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+}
+.search-card .search-content h5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;  
+  text-align: left;
+  color: #222222;
+  cursor: pointer;
+}
+/* .search-card .search-content h5:hover {
+  border: 2px solid #be185d;
+} */
+.search-card .search-recent {
+  width: 419px;
+  height: auto;
+  padding: 16px;
+  gap: 18px;
+  border-radius: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  opacity: 0px;
+  border: 1px solid #e5e5e5;
+  flex-direction: column;
+}
+.search-card .search-recent p {
+  text-align: left;
+  color: gary;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 7px;
+}
+.search-card .search-recent h5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #222222;
+}
+.search-card .search-recent h5 span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: start;
+  width: 100%;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #222222;
+}

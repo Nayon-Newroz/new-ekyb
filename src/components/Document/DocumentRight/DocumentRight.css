@@ -1,0 +1,117 @@
+.document-content-right {
+  overflow-y: auto;
+  height: 662px;
+
+  /* Hide scrollbar for Webkit browsers (Chrome, Safari, etc.) */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+
+  /* For WebKit browsers */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.document-content-right-header {
+  width: 100%;
+  height: 68px;
+  padding: 10px 0px 10px 10px;
+  gap: 10px;
+  border-radius: 6px 6px 0px 0px;
+  opacity: 0px;
+  background-color: #eff3ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.document-content-right-header h4 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 12px;
+  text-align: left;
+  color: #035b77;
+  margin-bottom: 9px;
+}
+.document-content-right-header p {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 10px;
+  text-align: left;
+  color: #ec8400;
+}
+.document-content-right-header button {
+}
+
+.start-document-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.start-document-content button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.end-document-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.end-document-content p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #555555;
+}
+.document-content-right-middle {
+  background-color: #ffffff;
+  width: 100%;
+}
+.document-content-right-middle-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 2px solid #e5e5e5;
+}
+.document-content-right-middle-top button {
+  background: none;
+  border: none;
+}
+.document-content-right-middle-top p {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 13px;
+  text-align: left;
+  color: #035b77;
+}
+.document-content-right-middle-bottom{
+  padding: 25px;
+  display: flex;
+  align-items: start;
+  justify-content: left;
+}
+.document-content-right-middle-bottom-extra-image {
+  padding: 16px 10px 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.document-content-right-middle-bottom-address{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.document-content-right-middle-bottom-address img{
+  height: 197px;
+}

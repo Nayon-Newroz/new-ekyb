@@ -1,0 +1,87 @@
+.list-header {
+  width: 100%;
+  height: 62px;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 6px;
+  opacity: 0px;
+  box-shadow: 0px 2px 3px 0px #0000001a;
+  box-shadow: 0px 0px 1px 0px #0000001a;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list-header-left {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.list-header-left-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.list-header-left-text h4 {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #770332;
+}
+.list-header-left-text p {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+  color: #426df3;
+}
+.list-header-left-text span {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+  color: #969696;
+}
+.list-header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.list-header-right-input {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Added gap between autocomplete inputs */
+}
+
+.list-header-right-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-table {
+  margin-top: 13px;
+}
+.list-header-right-input-select {
+  width: 115px;
+  height: 32px;
+  gap: 4px;
+  opacity: 0px;
+  padding: 5px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #969696;
+  border-radius: 4px;
+  border: 2px solid #e5e5e5;
+  opacity: 0px;
+}

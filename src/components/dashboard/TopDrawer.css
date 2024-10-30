@@ -1,0 +1,76 @@
+.top-drawer-header{
+  height: 70px;
+  width: 99%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-drawer-card {
+  height: 104px;
+  width: 100%;
+  border-radius: 20px;
+  border: 2px solid #e5e5e5;
+  padding: 32px 24px 32px 32px;
+  gap: 8px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.top-drawer-card:hover {
+  border: 2px solid #be185d;
+}
+.top-drawer-card-extra {
+  height: 104px;
+  width: 100%;
+  border-radius: 20px;
+  border: 2px solid #e5e5e5;
+  padding: 32px 24px 32px 32px;
+  gap: 8px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.top-drawer-card-extra:hover {
+  border: 2px solid #be185d;
+}
+.layer-one {
+  height: 104px;
+  width: 100%;
+  border-radius: 20px;
+  border-right: 2px solid #e5e5e5;
+  padding: 0px 18px 0px 0px;
+  background-color: #ffffff;
+  box-shadow: 10px #0000000f;
+  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.layer-two {
+  height: 104px;
+  width: 100%;
+  border-radius: 20px;
+  border-right: 2px solid #e5e5e5;
+  padding: 0px 21px 0px 0px;
+  background-color: #ffffff;
+  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.card-content {
+  cursor: pointer;
+  color: #000;
+}
+.card-drawer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+

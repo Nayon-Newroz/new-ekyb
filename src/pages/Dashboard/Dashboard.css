@@ -1,0 +1,360 @@
+.dashboard-container {
+}
+
+.dashboard-card-one {
+  display: flex;
+  align-items: start;
+  width: 100%;
+  height: 160px;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+  border: 1px solid #e5e5e5; /* Apply border to all sides */
+  border-right: none; /* Remove the right border */
+  border-radius: 10px 0 0 10px;
+  background-color: #ffffff;
+}
+.card-title {
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #bbbbbb;
+  margin-bottom: 6px;
+  gap: 5px;
+}
+.card-user-name {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: left;
+  color: #222222;
+  margin-bottom: 3px;
+}
+.card-user-type {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #555555;
+}
+.card-btn-section {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 5px;
+  margin-top: 12px;
+}
+
+.card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #d8d8d8;
+  box-shadow: 2px 0px 6px #26334d08;
+  cursor: pointer;
+  background: none;
+  opacity: 1; /* Set opacity to 1 or adjust as needed */
+}
+
+.card-btn:hover {
+  background-color: #be185d;
+}
+
+.card-btn svg path {
+  stroke: #be185d; /* Change stroke color for SVG paths */
+}
+
+.card-btn:hover svg path {
+  stroke: #ffffff; /* Change stroke color on hover */
+}
+
+.dashboard-card-two {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 10px;
+  border: 1px solid #e5e5e5; /* Apply border to all sides */
+  border-right: none; /* Remove the right border */
+  background-color: #ffffff;
+}
+.card-icon {
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #bbbbbb;
+  margin-bottom: 6px;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+}
+.card-user-count {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: #222222;
+  margin-bottom: 8px;
+}
+.card-view-btn {
+  width: 67px;
+  height: 24px;
+  padding: 5px;
+  border-radius: 4px;
+  opacity: 0px;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: left;
+  color: #00a1a1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f9f9;
+  border: none;
+  cursor: pointer;
+}
+.card-count-btn {
+  width: 67px;
+  height: 24px;
+  padding: 5px;
+  border-radius: 4px;
+  opacity: 0px;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: left;
+  color: #df8cae;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9e8ef;
+  border: none;
+  cursor: pointer;
+}
+.dashboard-card-three {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 10px;
+  border: 1px solid #e5e5e5; /* Apply border to all sides */
+  border-right: none; /* Remove the right border */
+  background-color: #ffffff;
+}
+.dashboard-card-four {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  gap: 15px;
+  border: 1px solid #e5e5e5; /* Apply border to all sides */
+  border-radius: 0px 10px 10px 0px;
+  background-color: #ffffff;
+}
+.card-nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+}
+
+/* overflow-container */
+.overflow-container {
+  width: 100%;
+  overflow-x: auto; /* Allows scrolling but hides the scrollbar */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.overflow-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+.overflow-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  cursor: pointer;
+  position: relative;
+}
+.overflow-content:hover {
+  .overflow-content-time {
+    display: none;
+  }
+  .overflow-content-allow {
+    display: block;
+  }
+}
+.overflow-content-title {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #770332;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.overflow-content-time {
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: right;
+  color: #969696;
+}
+.overflow-content-allow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+  position: absolute;
+  right: 0;
+}
+
+/* dashboard-header-title */
+.dashboard-header-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  border-bottom: 2px solid #eceef0;
+}
+.dashboard-header-title-content {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #555555;
+}
+
+/* dashboard-main-card */
+.dashboard-main-card {
+  height: 140px;
+  padding: 20px 25px;
+  gap: 10px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 1px 0px #0000001a;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 2px solid #e5e5e5;
+  cursor: pointer;
+}
+.dashboard-main-card-extra {
+  height: 140px;
+  padding: 20px 25px;
+  gap: 10px;
+  border-radius: 20px;
+  background-color: #fafafa;
+  box-shadow: 0px 0px 1px 0px #0000001a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 2px solid #eceef0;
+  cursor: pointer;
+}
+
+.dashboard-main-card:hover {
+  border: 2px solid #be185d;
+}
+
+.dashboard-main-card-extra:hover {
+  border: 2px solid #be185d;
+}
+
+.dashboard-main-card img {
+  height: 80px;
+  width: 80px;
+}
+
+.dashboard-main-card h2 {
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 40px;
+  text-align: left;
+  color: #555555;
+}
+
+.dashboard-main-card p {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.dashboard-main-card p span {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+  color: #be185d;
+}
+
+.dashboard-main-card button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  position: absolute;
+  top: 13px; /* Adjust this value to position it at the top */
+  right: 10px; /* Adjust this value to position it to the right */
+  cursor: pointer;
+}
+.image-wrapper {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.half-border {
+  background: conic-gradient(#ff0000 0% 50%, transparent 50% 100%);
+  /* Shows a red half-border for pending work */
+}
+
+.full-border {
+  background: conic-gradient(#00ff00 0% 100%);
+  /* Shows a green full-border for completed work */
+}

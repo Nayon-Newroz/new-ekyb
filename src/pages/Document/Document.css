@@ -1,0 +1,226 @@
+.document-header {
+  width: 100%;
+  height: 56px;
+  padding: 10px;
+  gap: 0px;
+  border-radius: 6px;
+  justify-content: center;
+  opacity: 0px;
+  background-color: #ffffff;
+  margin-top: 20px;
+  box-shadow: 0px 1px 1px 0px #0000001a;
+  display: flex;
+  align-items: center;
+}
+.step-one {
+  width: 350px;
+  height: 32px;
+  padding: 4px 6px 4px 14px;
+  gap: 17px;
+  border-radius: 29px;
+  opacity: 0px;
+  background-color: #fafafa;
+  border: 2px solid #68c81c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.step-one h4 {
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  color: #555555;
+}
+.step-two {
+  width: 325px;
+  height: 32px;
+  padding: 4px 6px 4px 14px;
+  gap: 17px;
+  border-radius: 29px;
+  opacity: 0px;
+  background-color: #fafafa;
+  border: 2px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.step-two h4 {
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  color: #555555;
+}
+.step-three {
+  width: 225px;
+  height: 32px;
+  padding: 4px 6px 4px 14px;
+  gap: 17px;
+  border-radius: 29px;
+  opacity: 0px;
+  background-color: #fafafa;
+  border: 2px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.step-three h4 {
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  color: #555555;
+}
+.step-border {
+  width: 219.5px;
+  height: 0px;
+  gap: 0px;
+  opacity: 0px;
+  border: 1px solid #68c81c;
+}
+.step-border-extra {
+  width: 219.5px;
+  height: 0px;
+  gap: 0px;
+  opacity: 0px;
+  border: 1px solid #e5e5e5;
+}
+.document-content {
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+.document-content-left {
+  overflow-y: auto;
+  height: 662px;
+
+  /* Hide scrollbar for Webkit browsers (Chrome, Safari, etc.) */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+
+  /* For WebKit browsers */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.document-content-right {
+  overflow-y: auto;
+  height: 462px;
+}
+.accordion {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 3px 0px #0000001a;
+  border-radius: 10px;
+}
+
+.accordion-header {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.accordion-content {
+  padding: 16px;
+}
+.accordion-button {
+  width: 34px;
+  height: 34px;
+  gap: 10px;
+  border-radius: 19px;
+  opacity: 0px;
+  background-color: #ffffff;
+  color: #000;
+  border: none;
+  font-size: 16px;
+}
+.accordion-button-Decline {
+  width: 34px;
+  height: 34px;
+  gap: 10px;
+  border-radius: 19px;
+  opacity: 0px;
+  background-color: #f23836;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+}
+.comment-field {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-family: Open Sans;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 12px;
+  text-align: left;
+  width: 98%;
+  margin: auto;
+}
+.accordion-close-btn {
+  width: 99%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 20px;
+}
+
+.document-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 67px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 3px 0px #0000001a;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  padding: 20px;
+  border-radius: 3px;
+}
+.document-bottom-one {
+  width: 141px;
+  height: 40px;
+  padding: 8px 20px 8px 20px;
+  gap: 7px;
+  border-radius: 4px;
+  border: 1px solid #426df3;
+  opacity: 0px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #426df3;
+  background-color: #eff3ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.document-bottom-two {
+  width: 141px;
+  height: 40px;
+  padding: 8px 20px 8px 20px;
+  gap: 7px;
+  border-radius: 4px;
+  border: none;
+  opacity: 0px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: #ffffff;
+  background: #68c81c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

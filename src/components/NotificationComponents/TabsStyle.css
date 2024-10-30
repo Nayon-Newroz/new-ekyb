@@ -1,0 +1,55 @@
+.TopTabs-Card {
+  width: 544px;
+  padding: 10px 0px 10px 0px;
+  gap: 10px;
+  border: 0px 0px 1px 0px;
+  opacity: 0px;
+  border-bottom: 1px solid var(--Border-Regular, #e5e5e5);
+  display: flex;
+  align-items: center;
+  justify-content: space-start;
+  position: relative;
+  margin-top: 10px;
+}
+.TopTabs-Card h4 {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  color: #037777;
+}
+.TopTabs-Card p {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #555555;
+  margin-top: 5px;
+}
+.TabsContent-End {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  gap: 5px;
+  color: #969696;
+}
+.TabsContent-End button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.BottomTabs-image {
+  width: 36px;
+  height: 36px;
+  padding: 6.63px 5.65px 6.14px 5.07px;
+  gap: 0px;
+  border-radius: 6px 0px 0px 0px;
+  opacity: 0px;
+  background-color: #d9f1f1;
+}
+.tab{
+  text-transform: lowercase;
+}

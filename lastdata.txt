@@ -1,0 +1,188 @@
+ const data = {
+    form: {
+      fields: [
+        {
+          fieldName: "Business Name",
+          title: "Business name",
+          placeHolder: "Please enter your business name",
+          type: "text",
+          defaultValue: "abc corporation",
+          state: "visible",
+          groupId: 1,
+          position: 1,
+          min: 4,
+          max: 10,
+          required: true,
+          parentParam: "",
+          validator: "REGEX",
+          options: null,
+        },
+        {
+          fieldName: "documentList",
+          title: "Please select all the document",
+          placeHolder: "Please select documents",
+          type: "checkbox",
+          defaultValue: "",
+          state: "visible",
+          groupId: 1,
+          position: 2,
+          min: 0,
+          max: 0,
+          required: true,
+          options: [
+            { id: 1, value: "nid" },
+            { id: 2, value: "TIN" },
+          ],
+        },
+        {
+          fieldName: "startDate",
+          title: "Start Date",
+          placeHolder: "Please select start Date",
+          type: "date",
+          defaultValue: "",
+          state: "visible",
+          groupId: 1,
+          position: 3,
+          required: true,
+          validator: "REGEX",
+          options: null,
+        },
+        {
+          fieldName: "endDate",
+          title: "End Date",
+          placeHolder: "Please select End Date",
+          type: "date",
+          defaultValue: "",
+          state: "visible",
+          groupId: 1,
+          position: 4,
+          required: true,
+          validator: "REGEX",
+          options: null,
+        },
+        {
+          fieldName: "logo",
+          title: "Please upload your logo",
+          placeHolder: "Logo",
+          type: "file",
+          defaultValue: "",
+          state: "visible",
+          groupId: 1,
+          position: 5,
+          required: true,
+          validator: "jpg|JPG|jpeg|JPEG|png|PNG",
+          options: null,
+        },
+        {
+          fieldName: "organizationType",
+          title: "Please select your organization type",
+          placeHolder: "Organization Type",
+          type: "option",
+          defaultValue: "",
+          state: "visible",
+          groupId: 1,
+          position: 6,
+          required: true,
+          options: [
+            { id: 1, value: "Public Limited" },
+            { id: 2, value: "Private Limited" },
+          ],
+        },
+        {
+          fieldName: "tradeLicence",
+          title: "Please upload your Trade Licence",
+          placeHolder: "Trade Licence",
+          type: "file",
+          defaultValue: "",
+          state: "hidden", // Initially hidden, will change based on conditions
+          groupId: 1,
+          position: 7,
+          required: true,
+          validator: "PDF|pdf|jpg|JPG|jpeg|JPEG|png|PNG",
+          options: null,
+        },
+        {
+          fieldName: "country",
+          title: "Please enter your Country",
+          placeHolder: "Country",
+          type: "option",
+          defaultValue: "",
+          state: "visible",
+          groupId: 1,
+          position: 8,
+          required: true,
+          options: [
+            { id: 1, value: "Bangladesh" },
+            { id: 2, value: "Canada" },
+          ],
+        },
+        {
+          fieldName: "city",
+          title: "City List",
+          placeHolder: "City",
+          type: "option",
+          defaultValue: "",
+          state: "inactive",
+          groupId: 1,
+          position: 9,
+          required: true,
+          options: [
+            { id: 1, value: "Dhaka" },
+            { id: 2, value: "Toronto" },
+          ],
+        },
+      ],
+      groups: [
+        {
+          id: 1,
+          name: "Business Information",
+          subTitle: "Display content from your connected accounts on your site",
+        },
+      ],
+    },
+    rules: [
+      {
+        name: "organizationType",
+        action: [
+          {
+            type: "change",
+            conditions: [
+              {
+                value: "^Private Limited$",
+                fields: [
+                  {
+                    name: "tradeLicence",
+                    types: {
+                      required: true,
+                      state: "active", // Change visibility to active
+                    },
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        name: "country",
+        action: [
+          {
+            type: "change",
+            conditions: [
+              {
+                value: "[A-Za-z]",
+                fields: [
+                  {
+                    name: "city",
+                    types: {
+                      state: "active", // Activate city field based on country
+                    },
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  };

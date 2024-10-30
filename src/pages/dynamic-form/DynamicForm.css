@@ -1,0 +1,173 @@
+/* DynamicForm.css */
+
+.dynamic-form {
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: "Inter", sans-serif;
+  background-color: #eef2f5;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.dynamic-form h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  font-size: 24px; /* Adjusted font size */
+}
+
+.dynamic-form h5 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #5d6464; /* Subtitle color */
+  /* font-size: 18px;  */
+}
+
+.dynamic-form form {
+  background: white;
+  border-radius: 12px;
+  padding: 60px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+}
+
+.dynamic-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.dynamic-form input[type="date"],
+.dynamic-form input[type="text"],
+.dynamic-form input[type="file"],
+.dynamic-form select {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s;
+  background-color: #f1f1f1; /* Input background color */
+  border-radius: 4px;
+  color: #262929;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+.dynamic-form input[type="text"]:focus,
+.dynamic-form input[type="date"]:focus,
+.dynamic-form select:focus {
+  border-color: #cacaca;
+  outline: none;
+  background-color: #fff; /* Change background color on focus */
+  background-color: #f1f1f1; /* Input background color */
+}
+
+.dynamic-form .error {
+  color: #e74c3c;
+  margin-top: -15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.dynamic-form .checkbox-group {
+  margin-bottom: 20px;
+}
+
+.dynamic-form .checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.dynamic-form .checkbox-label input {
+  margin-right: 10px;
+}
+
+.dynamic-form button {
+  background-color: #3498db;
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.dynamic-form button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.dynamic-form button[type="button"] {
+  background-color: #e74c3c;
+}
+
+.dynamic-form button[type="button"]:hover {
+  background-color: #c0392b;
+}
+
+/* ============================================================================= */
+
+.dynamic-form input[type="file"]::-webkit-file-upload-button {
+  background-color: #73787c; /* Button color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dynamic-form input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #4e565f; /* Hover color */
+}
+
+.dynamic-form input[type="file"]::-webkit-file-upload-button:active {
+  background-color: #4e565f; /* Active color */
+}
+
+/* Styles for disabled inputs */
+.dynamic-form input[type="text"]:disabled,
+.dynamic-form input[type="date"]:disabled,
+.dynamic-form input[type="file"]:disabled,
+.dynamic-form select:disabled {
+  background-color: #cfcdcd; /* Light grey background */
+  color: #a0a0a0; /* Dimmed text color */
+  /* border: 1px dashed #b0b0b0;   */
+  cursor: not-allowed;
+  opacity: 0.7; /* Reduced opacity */
+}
+
+/* Additional style for file upload button when disabled */
+.dynamic-form input[type="file"]::-webkit-file-upload-button:disabled {
+  background-color: #ccc; /* Disabled button background */
+  color: #888; /* Disabled button text color */
+  cursor: not-allowed;
+}
+
+.dynamic-form select {
+  appearance: none; /* Remove default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("/down.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center; /* Adjust icon position */
+  padding-right: 30px; /* Add space to avoid overlap with text */
+}
+
+.dynamic-form option:hover {
+  background-color: yellow !important;
+}
+
+/* Scale the checkbox */
+.dynamic-form input[type="checkbox"] {
+  transform: scale(1.2); /* Adjust scale value to increase/decrease size */
+  margin: 5px; /* Adjust margin as needed */
+}

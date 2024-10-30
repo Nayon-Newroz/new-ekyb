@@ -1,0 +1,229 @@
+.dashboard {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.left-top-button {
+  position: fixed;
+  top: 35px;
+  left: 1px;
+  height: 50px;
+  width: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.left-button {
+  position: fixed;
+  top: 40%;
+  left: 0;
+  transform: translateY(-50%); /* This centers the button vertically */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+  width: 40px;
+  z-index: 2000;
+}
+
+.left-bottom-button {
+  position: fixed;
+  bottom: 35px;
+  left: 17px;
+  height: 250px;
+  width: 84px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.right-bottom-button {
+  position: fixed;
+  bottom: 35px;
+  right: 1px;
+  height: 250px;
+  width: 84px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.right-top-button {
+  position: fixed;
+  top: 35px;
+  right: 1px;
+  height: 50px;
+  width: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  z-index: 1000;
+}
+
+/* images */
+.img1 {
+  height: 50px;
+  width: 50px;
+}
+
+/* button */
+.btn-one {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-two {
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  padding: 0px 4px;
+  gap: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px #00000040; /* Added proper box-shadow syntax */
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-three {
+  height: 50px;
+  width: 50px;
+  border-radius: 42px;
+  border: 1px solid #39b4b4;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 8px #00000040;
+  cursor: pointer;
+}
+
+.btn-four {
+  height: 50px;
+  width: 50px;
+  border-radius: 42px;
+  border: 1px solid #fff;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 8px #00000040;
+  cursor: pointer;
+}
+
+.btn-four-extra {
+  height: 50px;
+  width: 50px;
+  border-radius: 42px;
+  border: 1px solid #fc2861;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 8px #00000040;
+  cursor: pointer;
+}
+
+.hover-effect {
+  padding-bottom: 7px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.hover-effect:hover {
+  color: #00a1a1;
+}
+
+.userToolTip-header {
+  height: 45px;
+  width: 100%;
+  border-bottom: 1px solid #f1f1f6;
+  padding: 15px 5px 15px 25px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: left;
+  color: #155c9e;
+}
+.userToolTip-item {
+  width: 100%;
+  padding: 15px 5px 15px 25px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: left;
+  color: #585858;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  cursor: pointer;
+}
+.questionToolTip-item {
+  width: 100%;
+  padding: 15px 5px 15px 25px;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: left;
+  color: #585858;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #f1f3f6;
+}
+
+.questionToolTip-item:hover {
+  color: #00a1a1;
+}
+
+.userToolTip-item:hover {
+  color: #00a1a1;
+}
+
+.questionToolTip-bottom {
+  width: 200px;
+  height: 105px;
+  color: #fff;
+  background-color: #2b335e;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0px 0px 4px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  text-align: center;
+}
+
+/* outlet-style */
+.outlet-style {
+  padding: 62px 120px 42px 120px;
+}
